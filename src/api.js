@@ -1,5 +1,5 @@
 // Test Server
-const baseUrl = 'http://192.168.1.26:3000/api'
+const baseUrl = 'https://data-fe.herokuapp.com/api'
 
 // Real Server
 // const baseUrl = 'https://dfo-data-tool.herokuapp.com/api'
