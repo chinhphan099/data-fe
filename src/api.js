@@ -1,5 +1,5 @@
 // Test Server
-const baseUrl = 'https://data-fe.herokuapp.com/api'
+const baseUrl = 'https://data-entries.herokuapp.com/api'
 
 // Real Server
 // const baseUrl = 'https://dfo-data-tool.herokuapp.com/api'
