@@ -56,7 +56,7 @@ export default ({
           console.log(spreadsheet.totalEnglishDocs);
           totalDocuments += spreadsheet.totalEnglishDocs;
           return (
-            <CardWrapper key={index}>
+            <CardWrapper key={index} className={spreadsheet.totalEnglishDocs > 0 ? '' : 'not-cyncing'}>
               <Card>
                 <Cardtitle href={spreadsheet.spreadsheetUrl} target="_blank">
                   {spreadsheet.alias}
@@ -74,13 +74,7 @@ export default ({
                 </Option>
                 <Option
                   onClick={() => onFetch(spreadsheet.spreadsheetId)}
-                  className={
-                    spreadsheetFetching.status &&
-                    spreadsheetFetching.spreadsheetId !==
-                      spreadsheet.spreadsheetId
-                      ? 'disable-fetch'
-                      : 'enable-fetch'
-                  }
+                  className={`${(spreadsheetFetching.status && spreadsheetFetching.spreadsheetId !== spreadsheet.spreadsheetId) ? 'disable-fetch' : 'enable-fetch'} ${spreadsheet.totalEnglishDocs > 0 ? '' : 'not-cyncing'}`}
                   disabled={
                     spreadsheetFetching.status &&
                     spreadsheetFetching.spreadsheetId !==

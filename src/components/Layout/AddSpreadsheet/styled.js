@@ -36,19 +36,12 @@ export const Input2 = styled(Input)`
 `
 
 export const Path = styled.div`
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 `
 
-export const List = styled.div`
-  display: flex;
-  padding: 6px 0;
-  width: 100%;
-  flex-wrap: wrap;
-`
 
 export const Card = styled.div`
   text-align: center;
-  background-color: white;
   box-sizing: border-box;
   border-radius: 2px;
   padding: 12px 10px;
@@ -67,6 +60,9 @@ export const Cardtitle = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  &.not-cyncing {
+    color: red;
+  }
 `
 
 export const Cardcontent = styled(Cardtitle)`
@@ -88,18 +84,29 @@ export const Author = styled.span`
   // font-weight: 500;
 `
 
+export const List = styled.div`
+  display: flex;
+  padding: 6px 0;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+`
 export const CardWrapper = styled.div`
   display: flex;
   padding: 16px;
-  margin: 8px 16px 8px 0;
+  margin: 0 10px 10px 0;
   border-radius: 4px
   box-shadow: ${theme.color.boxShadow.box};
   display: flex;
   flex-direction: column;
   background-color: white;
-  flex-grow: 1;
   align-items: center;
   position: relative;
+  width: 240px;
+  box-sizing: border-box;
+  &.not-cyncing {
+    background-color: #ffffc7;
+  }
 `
 
 export const CardOptions = styled.div`
@@ -132,8 +139,12 @@ export const Option = styled.button`
   border: 1px solid transparent;
   font-size: 14px;
   transition: 160ms ease-out;
-  background-color: white;
+  background-color: transparent;
   color: dodgerblue;
+  &.not-cyncing {
+    color: white;
+    background-color: black;
+  }
 `
 
 export const Heart = styled.i`

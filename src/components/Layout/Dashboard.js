@@ -24,7 +24,7 @@ const Container = styled.div`
   max-height: 100vh;
   width: 86vw;
   overflow: scroll;
-  padding: 6px 4rem;
+  padding: 6px 40px;
   background-color: #f9f9fa;
   flex-grow: 1;
   box-sizing: border-box;
