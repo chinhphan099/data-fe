@@ -27,6 +27,7 @@ const List = styled.div`
   flex-direction: column;
   margin-top: 2rem;
 `
+
 const Item = styled.div`
   &:hover {
     background-color: ${theme.color.background.hover};

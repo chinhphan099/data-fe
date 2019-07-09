@@ -18,6 +18,7 @@ export default {
   spreadsheet: {
     fetch: bindUrl('/sprsheet/fetch'),
     delete: bindUrl('/sprsheet/delete'),
+    deleteAllSpeadSheets: bindUrl('/sprsheet/deleteallspreadsheets'),
     add: bindUrl('/sprsheet/add'),
     listall: bindUrl('/sprsheet/all'),
     search: bindUrl('/sprsheet/search'),

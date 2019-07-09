@@ -13,6 +13,7 @@ import SmartTranslator from '../../components/Layout/SmartTranslator'
 import Navbar from '../../containers/Navbar'
 import Teammate from '../../containers/Dashboards/Teammate'
 import SplitTeam from '../../containers/Dashboards/SplitTeam'
+import DeleteAllSpreadSheets from '../../containers/Dashboards/DeleteAllSpreadSheets'
 import ScrollTopButton from '../../containers/ScrollTopButton'
 
 const Wrapper = styled.div`
@@ -38,6 +39,7 @@ export default ({ user, onScroll, displayScrollButton }) => (
       <Route exact path="/searchcontent" component={SearchContent} />
       <Route exact path="/users" component={Teammate} />
       <Route exact path="/split-team" component={SplitTeam} />
+      <Route exact path="/deleteallspreadsheets" component={DeleteAllSpreadSheets} />
       <Route exact path="/searchonproject" component={SearchOnProject} />
       <Route exact path="/smarttranslator" component={SmartTranslator} />
     </Container>

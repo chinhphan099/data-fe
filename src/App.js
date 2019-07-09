@@ -45,6 +45,7 @@ class App extends Component {
           <Route exact path="/smarttranslator" component={Dashboard} />
           <Route exact path="/users" component={Dashboard} />
           <Route exact path="/split-team" component={Dashboard} />
+          <Route exact path="/deleteallspreadsheets" component={Dashboard} />
           <Route component={Page404} />
         </Switch>
       </Root>
