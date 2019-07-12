@@ -9,14 +9,25 @@ export default class Teammate extends Component {
   }
 
   async componentDidMount() {
-    const nextState = await Axios.get(api.users.all)
-    this.setState({ users: nextState.data })
+    await Axios.get(api.users.all).then((response) => {
+      let db = response.data.sort(function(a, b) {
+        if(a.email < b.email) {
+          return -1;
+        }
+        else if(a.email > b.email) {
+          return 1;
+        }
+        return 0;
+      });
+      this.setState({ users: db });
+    });
   }
 
   render() {
     const {
-      state: { users },
-    } = this
+      state: { users }
+    } = this;
+
     return <TeammateUI users={users} />
   }
 }

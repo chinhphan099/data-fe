@@ -21,21 +21,16 @@ const List = styled.div`
   box-shadow: ${theme.color.boxShadow.box};
   width: 40vw;
   text-align: center;
-  padding: 1rem;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin-top: 2rem;
 `
 
 const Item = styled.div`
-  &:hover {
-    background-color: ${theme.color.background.hover};
-    border-color: transparent;
-  }
-  transition: 140ms linear;
   padding: 0.5rem 0;
   border-bottom: 1px solid rgba(100, 100, 100, 0.08);
+  width: 50%;
 `
 
 const Name = styled.p`
