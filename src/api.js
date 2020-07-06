@@ -1,12 +1,15 @@
 // Test Server
-const baseUrl = 'https://data-entries.herokuapp.com/api'
+const baseUrl = 'http://192.168.1.31:3000/api'
 
 // Real Server
-// const baseUrl = 'https://dfo-data-tool.herokuapp.com/api'
+// const baseUrl = 'https://data-entries.herokuapp.com/api'
 
 const bindUrl = path => `${baseUrl}${path}`
 
 export default {
+  aws: {
+    getsimages: bindUrl('/aws/getsimages'),
+  },
   users: {
     signup: bindUrl('/users/signup'),
     signin: bindUrl('/users/signin'),

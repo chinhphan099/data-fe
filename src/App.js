@@ -13,6 +13,7 @@ import { Route, Switch } from 'react-router-dom'
 import Root from './hocs/Root'
 import Authenticate from './components/Layout/Authenticate'
 import Dashboard from './containers/Dashboard'
+import Public from './containers/Public'
 import Page404 from './components/Layout/404Page'
 // import ResetPassword from './components/ResetPassword'
 
@@ -45,6 +46,7 @@ class App extends Component {
           <Route exact path="/smarttranslator" component={Dashboard} />
           <Route exact path="/users" component={Dashboard} />
           <Route exact path="/split-team" component={Dashboard} />
+          <Route exact path="/images" component={Public} />
           <Route exact path="/deleteallspreadsheets" component={Dashboard} />
           <Route component={Page404} />
         </Switch>

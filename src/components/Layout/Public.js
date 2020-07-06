@@ -10,7 +10,6 @@ import SearchContent from '../../containers/Dashboards/SearchContent'
 import SearchOnProject from '../../components/Layout/SearchOnProject'
 import SmartTranslator from '../../components/Layout/SmartTranslator'
 
-import Navbar from '../../containers/Navbar'
 import Teammate from '../../containers/Dashboards/Teammate'
 import GetSImages from '../../containers/Dashboards/GetSImages'
 import SplitTeam from '../../containers/Dashboards/SplitTeam'
@@ -33,7 +32,6 @@ const Container = styled.div`
 
 export default ({ user, onScroll, displayScrollButton }) => (
   <Wrapper>
-    <Navbar />
     <Container id="scollTopDiv" onScroll={onScroll}>
       {/* <Route exact path="/google-verify" component={GoogleVerify} /> */}
       <Route exact path="/dashboard" component={AddSpreadsheet} />
