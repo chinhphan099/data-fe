@@ -1,8 +1,8 @@
 // Test Server
-const baseUrl = 'http://192.168.1.31:3000/api'
+// const baseUrl = 'http://192.168.1.31:3000/api'
 
 // Real Server
-// const baseUrl = 'https://data-entries.herokuapp.com/api'
+const baseUrl = 'https://data-entries.herokuapp.com/api'
 
 const bindUrl = path => `${baseUrl}${path}`
 
