@@ -31,12 +31,18 @@ const ImageRow = styled.div`
   text-align: center;
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   width: calc(100% / 10);
   background-color: #f1f1f1;
   border: 1px solid #ccc;
   padding: 10px;
+`
+
+const ImageName = styled.div`
+  width: 100%;
 `
 
 const Image = styled.img`
@@ -55,4 +61,4 @@ const Link = styled.a`
   }
 `
 
-export { TitleStyled, List, Email, Wrapper, Image, ImageRow, Link }
+export { TitleStyled, List, Email, Wrapper, Image, ImageRow, Link, ImageName }
